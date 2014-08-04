@@ -1,0 +1,34 @@
+{
+    "name": "trifs/php-shirt",
+    "description": "",
+    "keywords": [
+        "HTTP",
+        "simple request",
+        "trait"
+    ],
+    "homepage": "https://github.com/3fs/php-shirt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Štepic",
+            "email": "martin.stepic@3fs.si"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "trifs\\Shirt\\": "src/trifs/Shirt/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "trifs\\Shirt\\Tests\\": "tests/trifs/Shirt/"
+        }
+    }
+}
