@@ -120,7 +120,7 @@ trait Shirt
     {
         return $this->call($url, Shirt::$post, $header, $content);
     }
-    
+
     /**
      * Function creates PUT request to url with appointed parameters.
      *
@@ -406,7 +406,7 @@ trait Shirt
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, [$header]);
 
-        $output = curl_exec($ch);
+        $output         = curl_exec($ch);
         self::$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
         // return
